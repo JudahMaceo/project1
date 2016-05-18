@@ -1,0 +1,26 @@
+canvas {
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: block;
+}
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+.record-button {
+    font-size: 100px;
+    left: 20px;
+    bottom: 10px;
+    position: absolute;
+}
+.email-button {
+    font-size: 100px;
+    right: 20px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.hover {
+    color: #f1c40f;
+}
