@@ -1,26 +1,28 @@
 canvas {
+    display: block;
     height: 100%;
     width: 100%;
     background: black;
-    display: block;
 }
 body, html {
     height: 100%;
     margin: 0px;
 }
-.record-button {
-    font-size: 100px;
-    left: 20px;
-    bottom: 10px;
-    position: absolute;
-}
+
 .email-button {
-    font-size: 100px;
+    position: absolute;
     right: 20px;
     bottom: 10px;
-    position: absolute;
+    font-size: 100px;
 }
 
-.hover {
-    color: #f1c40f;
+.form{
+position:absolute;
+left:20px;
+bottom:10px;
 }
+
+/*.color{
+background:red;
+color:blue;
+}*/

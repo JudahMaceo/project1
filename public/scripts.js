@@ -1,3 +1,15 @@
+//jquery
+  //click on the email icon
+    //modal starts hidden
+    //show the hidden modal form
+    //click on submit button on modal form
+      //will trigger api event
+      //x or close button on modal
+      //if click outside of modal, closes automatically
+      //after api event has triggered, send message to DOM that email has been received
+
+
+
 console.log("hello from scipts.js")
 
 var keyData = {
@@ -185,7 +197,7 @@ var circleArray = [];
     //create a new circle
     var myCircle = new Path.Circle(point, 100);
     myCircle.fillColor = color;
-    sound.play();
+    // sound.play();
 
     circleArray.push(myCircle);
     // console.log(circleArray);
@@ -206,7 +218,7 @@ function onFrame(event) {
 
 }
 circleArray = [];
-console.log(circleArray);
+// console.log(circleArray);
 
 
 array = [];
@@ -214,7 +226,7 @@ array = [];
 $(document).keypress(function(event){
 //time stamp for each keypress event
 var timeStamp = Math.round(event.timeStamp);
-console.log(timeStamp);
+// console.log(timeStamp);
 
 //key code for each keypress event
 var keyCode = event.keyCode;
@@ -226,27 +238,48 @@ var letter = String.fromCharCode(keyCode);
 //keycode and the time stamp should be a key value pair in an object
 var object = {keyPressed: letter, time: timeStamp};
 array.push(object);
-console.log(array);
+// console.log(array);
 
 var encodedArray = array.map(function(obj){
   return obj.keyPressed + obj.time;
 })
   var encodedUrl = encodedArray.join(":");
-  console.log(encodedUrl);
+  // console.log(encodedUrl);
 // $("textArea").append(encodedUrl);k
 // $("span").append(encodedUrl);
 
 })
 
-$("#playButton").on("mouseenter", function(){
-console.log("mouse enter");
-$(this).addClass("hover");
+// $("form").hide();
+
+$("#button").on("click",function(){
+console.log("button clicked");
+  $("form").show();
 })
 
-$("#playButton").on("mouseleave", function(){
-console.log("mouse exit");
-$(this).removeClass("hover");
+$("#myCanvas").on("click",function(){
+  $("form").hide();
 })
+
+$("#submit").on("click",function(){
+console.log("submit clicked");
+console.log( $("#email").val() );
+})
+
+$("#email").on("click", function(){
+console.log("email clicked");
+})
+// $("#playButton").on("mouseenter", function(){
+// console.log("mouse enter");
+// $(this).addClass("hover");
+// })
+//
+// $("#playButton").on("mouseleave", function(){
+// console.log("mouse exit");
+// $(this).removeClass("hover");
+// })
+
+
 
 
 // var encodedArray = array.map(function(obj){
@@ -259,3 +292,10 @@ $(this).removeClass("hover");
 // encoding data
   //encoding and parsing data from a urls
   //encode data from an object and parse it out
+
+  // curl -s --user 'api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0' \
+  //     https://api.mailgun.net/v3/samples.mailgun.org/messages \
+  //     -F from='Excited User <judah29@gmail.com>' \
+  //     -F to='judah29@gmail.com' \
+  //     -F subject='Hello' \
+  //     -F text='Testing some Mailgun awesomeness!'
