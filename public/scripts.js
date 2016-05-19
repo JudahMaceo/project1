@@ -197,7 +197,7 @@ var circleArray = [];
     //create a new circle
     var myCircle = new Path.Circle(point, 100);
     myCircle.fillColor = color;
-    // sound.play();
+    sound.play();
 
     circleArray.push(myCircle);
     // console.log(circleArray);
