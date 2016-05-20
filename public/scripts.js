@@ -235,7 +235,10 @@ form.addEventListener("submit", function(event){
   event.preventDefault();
   console.log(name.value);
   console.log(email.value);
+  name.value = "";
+  email.value = "";
 })
+
 
 // $("#form").addEventListener("submit", function(){
 //   return false;
