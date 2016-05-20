@@ -188,7 +188,7 @@ function onKeyDown(event) {
 
         var myCircle = new Path.Circle(point, 400);
         myCircle.fillColor = color;
-        // sound.play();
+        sound.play();
 
         circleArray.push(myCircle);
         // console.log(circleArray);
