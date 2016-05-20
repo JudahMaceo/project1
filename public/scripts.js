@@ -227,14 +227,19 @@ $("#myCanvas").on("click", function() {
 // console.log("email clicked");
 // })
 
-var mySubmitFunction = function() {
-    // event.preventDefault();
-    console.log(event);
-    return false;
+// object.addEventListener("submit", myScript);
+var form = document.getElementById("form")
+var name = document.getElementById("name")
+var email = document.getElementById("email")
+form.addEventListener("submit", function(event){
+  event.preventDefault();
+  console.log(name.value);
+  console.log(email.value);
+})
 
-}
-
-
+// $("#form").addEventListener("submit", function(){
+//   return false;
+// })
 
 
 
