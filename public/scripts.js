@@ -250,7 +250,7 @@ var encodedArray = array.map(function(obj){
 
 })
 
-// $("form").hide();
+$("form").hide();
 
 $("#button").on("click",function(){
 console.log("button clicked");
