@@ -183,7 +183,7 @@ function onKeyDown(event) {
         var point = maxPoint * randomPoint;
 
         //create a new circle
-        var myCircle = new Path.Circle(point, 100);
+        var myCircle = new Path.Circle(point, 300);
         myCircle.fillColor = color;
         sound.play();
 
