@@ -14,16 +14,16 @@ body, html {
     bottom: 10px;
     font-size: 100px;
 }
-
 #form label {
     color: white;
 }
-
 #form {
-position: absolute;
-right: 13px;
-bottom: 29px;
-background-color: #000000;
-width: 33%;
-padding: 1%;
+    position: absolute;
+    right: 13px;
+    bottom: 29px;
+    background-color: #000000;
+    width: 33%;
+    max-width: 250px;
+    min-width: 170px;
+    padding: 1%;
 }
