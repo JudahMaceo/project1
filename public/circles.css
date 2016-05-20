@@ -8,21 +8,17 @@ body, html {
     height: 100%;
     margin: 0px;
 }
-
 .email-button {
     position: absolute;
     right: 20px;
     bottom: 10px;
     font-size: 100px;
 }
-
-.form{
-position:absolute;
-left:20px;
-bottom:10px;
+#form {
+    position: absolute;
+    right: 23px;
+    bottom: 39px;
+    background-color: #86B2CD;
+    width: 33%;
+    padding: 1%;
 }
-
-/*.color{
-background:red;
-color:blue;
-}*/
