@@ -188,12 +188,21 @@ function onKeyDown(event) {
 
         var myCircle = new Path.Circle(point, 400);
         myCircle.fillColor = color;
-        sound.play();
+        // sound.play();
 
         circleArray.push(myCircle);
         // console.log(circleArray);
 
-      $("#button").css("color", color)
+        $("#button").css("color", color);
+        $(".container").css("color", color);
+
+        // var path = new Path.Star({
+        //     center: [50, 50],
+        //     points: 12,
+        //     radius1: 25,
+        //     radius2: 40,
+        //     fillColor: color
+        // });
 
     }
     //key data truthy statement ends
