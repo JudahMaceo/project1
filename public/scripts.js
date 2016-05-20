@@ -171,10 +171,12 @@ function onKeyDown(event) {
         var sound = keyData[event.key].sound;
 
         //height and width variables are declared (from view object)
+        //height and width derived from view size
         var height = view.size.height;
         var width = view.size.width;
 
         //max point variable is declared as height and width of current view
+        //new point (argument for shape) based on height and width (of view size)
         var maxPoint = new Point(width, height);
 
         //random point variable is declared and combined with max point
@@ -183,15 +185,19 @@ function onKeyDown(event) {
         var point = maxPoint * randomPoint;
 
         //create a new circle
-        var myCircle = new Path.Circle(point, 300);
+
+        var myCircle = new Path.Circle(point, 400);
         myCircle.fillColor = color;
         sound.play();
 
         circleArray.push(myCircle);
         // console.log(circleArray);
 
+      $("#button").css("color", color)
+
     }
     //key data truthy statement ends
+
 
 }
 //function ends
@@ -218,62 +224,14 @@ $("#myCanvas").on("click", function() {
     $("form").hide();
 })
 
-// $("#submit").on("click",function(){
-// console.log("submit clicked");
-// console.log( $("#email").val() );
-// })
-
-// $("#email").on("click", function(){
-// console.log("email clicked");
-// })
-
 // object.addEventListener("submit", myScript);
 var form = document.getElementById("form")
 var name = document.getElementById("name")
 var email = document.getElementById("email")
-form.addEventListener("submit", function(event){
-  event.preventDefault();
-  console.log(name.value);
-  console.log(email.value);
-  name.value = "";
-  email.value = "";
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log(name.value);
+    console.log(email.value);
+    name.value = "";
+    email.value = "";
 })
-
-
-// $("#form").addEventListener("submit", function(){
-//   return false;
-// })
-
-
-
-
-// $("#playButton").on("mouseenter", function(){
-// console.log("mouse enter");
-// $(this).addClass("hover");
-// })
-//
-// $("#playButton").on("mouseleave", function(){
-// console.log("mouse exit");
-// $(this).removeClass("hover");
-// })
-
-
-
-
-// var encodedArray = array.map(function(obj){
-//   return obj.keyPressed + obj.time;
-// })
-// console.log(encodedArray.join(":"));
-
-
-
-// encoding data
-//encoding and parsing data from a urls
-//encode data from an object and parse it out
-
-// curl -s --user 'api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0' \
-//     https://api.mailgun.net/v3/samples.mailgun.org/messages \
-//     -F from='Excited User <judah29@gmail.com>' \
-//     -F to='judah29@gmail.com' \
-//     -F subject='Hello' \
-//     -F text='Testing some Mailgun awesomeness!'
