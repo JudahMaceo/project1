@@ -1,49 +1,49 @@
-
-
 <!DOCTYPE html>
+
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Circles</title>
-    <!-- FIREBASE -->
-    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-    <!-- PAPER-JS -->
-    <script src="paper-full.js" charset="utf-8"></script>
-    <!-- HOWLER-JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.js" charset="utf-8"></script>
-    <!-- FONT-AWESOME -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="circles.css" media="screen" title="no title" charset="utf-8">
-    <!-- JQUERY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" charset="utf-8"></script>
-    <!-- JS and CANVAS -->
-    <script type="text/paperscript" src="scripts.js" canvas="myCanvas"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Circles</title>
+  <!-- FIREBASE -->
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <!-- PAPER-JS -->
+  <script src="paper-full.js" charset="utf-8"></script>
+  <!-- HOWLER-JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.js" charset="utf-8"></script>
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="circles.css" media="screen" title="no title" charset="utf-8">
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" charset="utf-8"></script>
+  <!-- JS and CANVAS -->
+  <script type="text/paperscript" src="scripts.js" canvas="myCanvas"></script>
+</head>
 
 
-  <body>
-      <canvas id="myCanvas" resize></canvas>
+<body>
+  <canvas id="myCanvas" resize></canvas>
 
-<!-- EMAIL SIGNUP -->
-<div id="button" class="email-button">
-  <i class="fa fa-envelope-o fa-2" aria-hidden="true"></i>
-</div>
-
-<form id="form">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+  <!-- EMAIL SIGNUP -->
+  <div id="button" class="email-button">
+    <i class="fa fa-envelope-o fa-2" aria-hidden="true"></i>
   </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
-  </div>
-  <button id="submit" type="submit" class="btn btn-default">Share this</button>
-</form>
 
-  </body>
+  <form id="form">
+    <div class="form-group">
+      <label for="exampleInputName2">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail2">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="jane.doe@example.com">
+    </div>
+    <button id="submit" type="submit" class="btn btn-default">Share this</button>
+  </form>
+
+</body>
+
 </html>
